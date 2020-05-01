@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "django-celery-receiver"
+version = "0.1.0"
+description = "Django Celery Receiver for real-time monitoring of your celery tasks"
+authors = ["Alexander Rymdeko-Harvey"]
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+celery = "^4.4.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+mkdocs = "^1.1"
+black = "^19.10b0"
+coverage = "^5.1"
+mypy = "^0.770"
+mkdocs-material = "^5.1.4"
+markdown-include = "^0.5.1"
+isort = "^4.3.21"
+autoflake = "^1.3.1"
+pytest-cov = "^2.8.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+)/
+'''

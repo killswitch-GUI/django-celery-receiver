@@ -1,0 +1,1 @@
+DJANGO_CELERY_REVEIVER := $$(sed -n -E "s/__version__ = '(.+)'/\1/p" django-celery-receiver/__version__.py)

@@ -1,0 +1,11 @@
+site_name: django-celery-receiver
+site_description: Django Celery Receiver for real-time monitoring of your celery tasks
+site_url: https://django-celery-receiver.com/
+
+theme:
+    name: 'material'
+
+
+repo_name: obscuritylabs/django-celery-receiver
+repo_url: https://github.com/obscuritylabs/django-celery-receiver
+edit_uri: ''
